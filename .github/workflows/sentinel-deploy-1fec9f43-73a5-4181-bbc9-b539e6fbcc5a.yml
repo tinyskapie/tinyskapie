@@ -26,7 +26,7 @@ jobs:
       directory: '${{ github.workspace }}'
       cloudEnv: 'AzureCloud'
       creds: ${{ secrets.AZURE_SENTINEL_CREDENTIALS_1fec9f4373a54181bbc9b539e6fbcc5a }}
-      contentTypes: 'Playbook'
+      contentTypes: 'Playbook,AnalyticsRule,AutomationRule,HuntingQuery,Parser,Workbook'
 
     steps:
     - name: Login to Azure (Attempt 1)
